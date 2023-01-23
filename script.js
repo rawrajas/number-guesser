@@ -12,9 +12,9 @@ If both players are tied, the human user should win.
  */
 
 const compareGuesses = (humanGuess, computerGuess, secretTarget) =>{
-  if (humanGuess === secretTarget){
+  if (humanGuess == secretTarget){
       return true
-  }  else if (computerGuess === secretTarget) {
+  }  else if (computerGuess == secretTarget) {
       return false
   }
 };
@@ -27,3 +27,8 @@ const updateScore = winner =>{
         computerScore += 1;
     }
 }
+
+//Increases currentRoundNumber by 1
+const advanceRound = () =>{
+    currentRoundNumber += 1;
+};
