@@ -19,3 +19,11 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) =>{
   }
 };
 
+//Updates the score based on the winner of the round
+const updateScore = winner =>{
+    if (winner === 'human'){
+        humanScore += 1;
+    } else if (winner === 'computer'){
+        computerScore += 1;
+    }
+}
